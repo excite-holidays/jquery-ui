@@ -1827,6 +1827,10 @@ $.extend(Datepicker.prototype, {
 					monthHtml += "<option value='" + month + "'" +
 						(month === drawMonth ? " selected='selected'" : "") +
 						">" + monthNamesShort[month] + "</option>";
+				} else {
+					monthHtml += "<option disabled='disabled' value='" + month + "'" +
+						(month === drawMonth ? " selected='selected'" : "") +
+						">" + monthNamesShort[month] + "</option>";
 				}
 			}
 			monthHtml += "</select>";
